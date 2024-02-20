@@ -1,0 +1,1359 @@
+{
+    "$schema": "https://raw.githubusercontent.com/reVISit-studies/study/main/src/parser/StudyConfigSchema.json",
+    "studyMetadata": {
+        "title": "A3 Experiment",
+        "version": "pilot",
+        "authors": [
+            "Kendall Haddigan, Andrew Sosa,  Nicholas Whalen"
+        ],
+        "date": "2024-02-19",
+        "description": "A3 Experiment",
+        "organizations": [
+            "University of Utah",
+            "WPI",
+            "University of Toronto"
+        ]
+    },
+    "uiConfig": {
+        "contactEmail": "test@test.com",
+        "helpTextPath": "cleveland/help.md",
+        "logoPath": "assets/revisitLogoSquare.svg",
+        "withProgressBar": true,
+        "autoDownloadStudy": false,
+        "sidebar": true
+    },
+    "baseComponents": {
+        "bubbleChart": {
+            "description": "A bubble chart with correct answer of 0.66",
+            "instruction": "Two values are marked with dots. \n\nWhat percentage do you believe the smaller value represents relative to the larger value?",
+            "type": "react-component",
+            "path": "cleveland/BubbleChart.tsx",
+            "parameters": {
+                "data": [
+                    {
+                        "name": "Dataset 1",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "93"
+                          },
+                          {
+                            "name": "B",
+                            "value": "38"
+                          },
+                          {
+                            "name": "C",
+                            "value": "19"
+                          },
+                          {
+                            "name": "D",
+                            "value": "19"
+                          },
+                          {
+                            "name": "E",
+                            "value": "22"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          5
+                        ],
+                        "correctAnswer": 0.6
+                      },
+                      {
+                        "name": "Dataset 2",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "33"
+                          },
+                          {
+                            "name": "B",
+                            "value": "26"
+                          },
+                          {
+                            "name": "C",
+                            "value": "32"
+                          },
+                          {
+                            "name": "D",
+                            "value": "1"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          5,
+                          5
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 3",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "1"
+                          },
+                          {
+                            "name": "B",
+                            "value": "17"
+                          },
+                          {
+                            "name": "C",
+                            "value": "18"
+                          },
+                          {
+                            "name": "D",
+                            "value": "24"
+                          },
+                          {
+                            "name": "E",
+                            "value": "64"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 4",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "63"
+                          },
+                          {
+                            "name": "B",
+                            "value": "94"
+                          },
+                          {
+                            "name": "C",
+                            "value": "73"
+                          },
+                          {
+                            "name": "D",
+                            "value": "9"
+                          },
+                          {
+                            "name": "E",
+                            "value": "40"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 5",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "0"
+                          },
+                          {
+                            "name": "B",
+                            "value": "55"
+                          },
+                          {
+                            "name": "C",
+                            "value": "20"
+                          },
+                          {
+                            "name": "D",
+                            "value": "65"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          4
+                        ],
+                        "correctAnswer": 0.75
+                      },
+                      {
+                        "name": "Dataset 6",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "82"
+                          },
+                          {
+                            "name": "B",
+                            "value": "11"
+                          },
+                          {
+                            "name": "C",
+                            "value": "89"
+                          },
+                          {
+                            "name": "D",
+                            "value": "6"
+                          },
+                          {
+                            "name": "E",
+                            "value": "70"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          3
+                        ],
+                        "correctAnswer": 0.67
+                      },
+                      {
+                        "name": "Dataset 7",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "13"
+                          },
+                          {
+                            "name": "B",
+                            "value": "7"
+                          },
+                          {
+                            "name": "C",
+                            "value": "67"
+                          },
+                          {
+                            "name": "D",
+                            "value": "97"
+                          },
+                          {
+                            "name": "E",
+                            "value": "30"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 8",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "100"
+                          },
+                          {
+                            "name": "B",
+                            "value": "86"
+                          },
+                          {
+                            "name": "C",
+                            "value": "9"
+                          },
+                          {
+                            "name": "D",
+                            "value": "44"
+                          },
+                          {
+                            "name": "E",
+                            "value": "95"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 9",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "60"
+                          },
+                          {
+                            "name": "B",
+                            "value": "3"
+                          },
+                          {
+                            "name": "C",
+                            "value": "10"
+                          },
+                          {
+                            "name": "D",
+                            "value": "66"
+                          },
+                          {
+                            "name": "E",
+                            "value": "42"
+                          }
+                        ],
+                        "selectedIndices": [
+                          4,
+                          4
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 10",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "15"
+                          },
+                          {
+                            "name": "B",
+                            "value": "97"
+                          },
+                          {
+                            "name": "C",
+                            "value": "7"
+                          },
+                          {
+                            "name": "D",
+                            "value": "89"
+                          },
+                          {
+                            "name": "E",
+                            "value": "4"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      }
+                ]
+            },
+            "response": [
+                {
+                    "id": "cm-response",
+                    "prompt": "Answer:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "numerical",
+                    "placeholder": "0-100",
+                    "max": 100,
+                    "min": 0
+                }
+            ],
+            "nextButtonLocation": "sidebar",
+            "instructionLocation": "sidebar"
+        },
+        "stackedBarChart": {
+            "meta": {
+                "difficulty": 5,
+                "chart": "stacked bar"
+            },
+            "description": "A chart with correct answer of 0.66",
+            "instruction": "Two values are marked with dots. \n\nWhat percentage do you believe the smaller value represents relative to the larger value?",
+            "type": "react-component",
+            "path": "cleveland/StackedBarChart.tsx",
+            "parameters": {
+                "data": [
+                    {
+                        "name": "A",
+                        "value": "30"
+                    },
+                    {
+                        "name": "B",
+                        "value": "40"
+                    },
+                    {
+                        "name": "C",
+                        "value": "50"
+                    },
+                    {
+                        "name": "D",
+                        "value": "40"
+                    },
+                    {
+                        "name": "E",
+                        "value": "60"
+                    }
+                ],
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            },
+            "response": [
+                {
+                    "id": "cm-response",
+                    "prompt": "Answer:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "numerical",
+                    "placeholder": "0-100",
+                    "max": 100,
+                    "min": 0
+                }
+            ],
+            "nextButtonLocation": "sidebar",
+            "instructionLocation": "sidebar"
+        },
+        "barChart": {
+            "meta": {
+                "difficulty": 5,
+                "chart": "Bar"
+            },
+            "description": "A chart with correct answer of 0.66",
+            "instruction": "Two values are marked with dots. \n\nWhat percentage do you believe the smaller value represents relative to the larger value?",
+            "type": "react-component",
+            "path": "cleveland/BarChart.tsx",
+            "parameters": {
+                "data": [
+                    {
+                        "name": "Dataset 1",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": 10
+                          },
+                          {
+                            "name": "B",
+                            "value": 30
+                          },
+                          {
+                            "name": "C",
+                            "value": 50
+                          },
+                          {
+                            "name": "D",
+                            "value": 60
+                          },
+                          {
+                            "name": "E",
+                            "value": 80
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          5
+                        ],
+                        "correctAnswer": 0.6
+                      },
+                      {
+                        "name": "Dataset 2",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "33"
+                          },
+                          {
+                            "name": "B",
+                            "value": "26"
+                          },
+                          {
+                            "name": "C",
+                            "value": "32"
+                          },
+                          {
+                            "name": "D",
+                            "value": "1"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          5,
+                          5
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 3",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "1"
+                          },
+                          {
+                            "name": "B",
+                            "value": "17"
+                          },
+                          {
+                            "name": "C",
+                            "value": "18"
+                          },
+                          {
+                            "name": "D",
+                            "value": "24"
+                          },
+                          {
+                            "name": "E",
+                            "value": "64"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 4",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "63"
+                          },
+                          {
+                            "name": "B",
+                            "value": "94"
+                          },
+                          {
+                            "name": "C",
+                            "value": "73"
+                          },
+                          {
+                            "name": "D",
+                            "value": "9"
+                          },
+                          {
+                            "name": "E",
+                            "value": "40"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 5",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "0"
+                          },
+                          {
+                            "name": "B",
+                            "value": "55"
+                          },
+                          {
+                            "name": "C",
+                            "value": "20"
+                          },
+                          {
+                            "name": "D",
+                            "value": "65"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          4
+                        ],
+                        "correctAnswer": 0.75
+                      },
+                      {
+                        "name": "Dataset 6",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "82"
+                          },
+                          {
+                            "name": "B",
+                            "value": "11"
+                          },
+                          {
+                            "name": "C",
+                            "value": "89"
+                          },
+                          {
+                            "name": "D",
+                            "value": "6"
+                          },
+                          {
+                            "name": "E",
+                            "value": "70"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          3
+                        ],
+                        "correctAnswer": 0.67
+                      },
+                      {
+                        "name": "Dataset 7",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "13"
+                          },
+                          {
+                            "name": "B",
+                            "value": "7"
+                          },
+                          {
+                            "name": "C",
+                            "value": "67"
+                          },
+                          {
+                            "name": "D",
+                            "value": "97"
+                          },
+                          {
+                            "name": "E",
+                            "value": "30"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 8",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "100"
+                          },
+                          {
+                            "name": "B",
+                            "value": "86"
+                          },
+                          {
+                            "name": "C",
+                            "value": "9"
+                          },
+                          {
+                            "name": "D",
+                            "value": "44"
+                          },
+                          {
+                            "name": "E",
+                            "value": "95"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 9",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "60"
+                          },
+                          {
+                            "name": "B",
+                            "value": "3"
+                          },
+                          {
+                            "name": "C",
+                            "value": "10"
+                          },
+                          {
+                            "name": "D",
+                            "value": "66"
+                          },
+                          {
+                            "name": "E",
+                            "value": "42"
+                          }
+                        ],
+                        "selectedIndices": [
+                          4,
+                          4
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 10",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "15"
+                          },
+                          {
+                            "name": "B",
+                            "value": "97"
+                          },
+                          {
+                            "name": "C",
+                            "value": "7"
+                          },
+                          {
+                            "name": "D",
+                            "value": "89"
+                          },
+                          {
+                            "name": "E",
+                            "value": "4"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      }
+                    ]
+            },
+            "response": [
+                {
+                    "id": "cm-response",
+                    "prompt": "Answer:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "numerical",
+                    "placeholder": "0-100",
+                    "max": 100,
+                    "min": 0
+                }
+            ],
+            "nextButtonLocation": "sidebar",
+            "instructionLocation": "sidebar"
+        },
+        "pieChart": {
+            "meta": {
+                "difficulty": 5,
+                "chart": "pie"
+            },
+            "description": "Pie chart",
+            "instruction": "Two values are marked with dots. \n\nWhat percentage do you believe the smaller value represents relative to the larger value?",
+            "type": "react-component",
+            "path": "cleveland/PieChart.tsx",
+            "parameters": {
+                "data": [
+                    {
+                        "name": "Dataset 1",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": 10
+                          },
+                          {
+                            "name": "B",
+                            "value": 30
+                          },
+                          {
+                            "name": "C",
+                            "value": 50
+                          },
+                          {
+                            "name": "D",
+                            "value": 60
+                          },
+                          {
+                            "name": "E",
+                            "value": 80
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          5
+                        ],
+                        "correctAnswer": 0.6
+                      },
+                      {
+                        "name": "Dataset 2",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "33"
+                          },
+                          {
+                            "name": "B",
+                            "value": "26"
+                          },
+                          {
+                            "name": "C",
+                            "value": "32"
+                          },
+                          {
+                            "name": "D",
+                            "value": "1"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          5,
+                          5
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 3",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "1"
+                          },
+                          {
+                            "name": "B",
+                            "value": "17"
+                          },
+                          {
+                            "name": "C",
+                            "value": "18"
+                          },
+                          {
+                            "name": "D",
+                            "value": "24"
+                          },
+                          {
+                            "name": "E",
+                            "value": "64"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 4",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "63"
+                          },
+                          {
+                            "name": "B",
+                            "value": "94"
+                          },
+                          {
+                            "name": "C",
+                            "value": "73"
+                          },
+                          {
+                            "name": "D",
+                            "value": "9"
+                          },
+                          {
+                            "name": "E",
+                            "value": "40"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 5",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "0"
+                          },
+                          {
+                            "name": "B",
+                            "value": "55"
+                          },
+                          {
+                            "name": "C",
+                            "value": "20"
+                          },
+                          {
+                            "name": "D",
+                            "value": "65"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          4
+                        ],
+                        "correctAnswer": 0.75
+                      },
+                      {
+                        "name": "Dataset 6",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "82"
+                          },
+                          {
+                            "name": "B",
+                            "value": "11"
+                          },
+                          {
+                            "name": "C",
+                            "value": "89"
+                          },
+                          {
+                            "name": "D",
+                            "value": "6"
+                          },
+                          {
+                            "name": "E",
+                            "value": "70"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          3
+                        ],
+                        "correctAnswer": 0.67
+                      },
+                      {
+                        "name": "Dataset 7",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "13"
+                          },
+                          {
+                            "name": "B",
+                            "value": "7"
+                          },
+                          {
+                            "name": "C",
+                            "value": "67"
+                          },
+                          {
+                            "name": "D",
+                            "value": "97"
+                          },
+                          {
+                            "name": "E",
+                            "value": "30"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 8",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "100"
+                          },
+                          {
+                            "name": "B",
+                            "value": "86"
+                          },
+                          {
+                            "name": "C",
+                            "value": "9"
+                          },
+                          {
+                            "name": "D",
+                            "value": "44"
+                          },
+                          {
+                            "name": "E",
+                            "value": "95"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 9",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "60"
+                          },
+                          {
+                            "name": "B",
+                            "value": "3"
+                          },
+                          {
+                            "name": "C",
+                            "value": "10"
+                          },
+                          {
+                            "name": "D",
+                            "value": "66"
+                          },
+                          {
+                            "name": "E",
+                            "value": "42"
+                          }
+                        ],
+                        "selectedIndices": [
+                          4,
+                          4
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 10",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "15"
+                          },
+                          {
+                            "name": "B",
+                            "value": "97"
+                          },
+                          {
+                            "name": "C",
+                            "value": "7"
+                          },
+                          {
+                            "name": "D",
+                            "value": "89"
+                          },
+                          {
+                            "name": "E",
+                            "value": "4"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      }
+                    ]
+            },
+            "response": [
+                {
+                    "id": "cm-response",
+                    "prompt": "Answer:",
+                    "required": true,
+                    "location": "sidebar",
+                    "type": "numerical",
+                    "placeholder": "0-100",
+                    "max": 100,
+                    "min": 0
+                }
+            ],
+            "nextButtonLocation": "sidebar",
+            "instructionLocation": "sidebar"
+        }
+    },
+    "components": {
+        "introduction": {
+            "type": "markdown",
+            "path": "cleveland/introduction.md",
+            "response": []
+        },
+        "consent": {
+            "type": "markdown",
+            "path": "cleveland/consent-cm.md",
+            "nextButtonText": "Agree",
+            "response": [
+                {
+                    "id": "signature",
+                    "prompt": "Your signature",
+                    "required": true,
+                    "location": "belowStimulus",
+                    "type": "shortText",
+                    "placeholder": "Please provide your signature"
+                },
+                {
+                    "id": "accept",
+                    "prompt": "Do you consent to the study and wish to continue?",
+                    "required": true,
+                    "requiredValue": "yes",
+                    "location": "belowStimulus",
+                    "type": "radio",
+                    "options": [
+                        {
+                            "label": "Decline",
+                            "value": "no"
+                        },
+                        {
+                            "label": "Accept",
+                            "value": "yes"
+                        }
+                    ]
+                }
+            ]
+        },
+        "training1": {
+            "type": "image",
+            "path": "cleveland/cm-training.png",
+            "response": []
+        },
+        "trainingBubbleChart1": {
+            "baseComponent": "bubbleChart",
+            "description": "A bubble chart with correct answer of 0.66",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            },
+            "correctAnswer": [
+                {
+                    "id": "cm-response",
+                    "answer": 66
+                }
+            ]
+        },
+        "trainingStackedBarChart1": {
+            "baseComponent": "stackedBarChart",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            },
+            "correctAnswer": [
+                {
+                    "id": "cm-response",
+                    "answer": 66
+                }
+            ]
+        },
+        "trainingBarChart1": {
+            "baseComponent": "barChart",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            },
+            "correctAnswer": [
+                {
+                    "id": "cm-response",
+                    "answer": 66
+                }
+            ]
+        },
+        "trainingPieChart1": {
+            "baseComponent": "pieChart",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            },
+            "correctAnswer": [
+                {
+                    "id": "cm-response",
+                    "answer": 66
+                }
+            ]
+        },
+        "bubbleChart1": {
+            "baseComponent": "bubbleChart",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            }
+        },
+        "stackedBarChart1": {
+            "baseComponent": "stackedBarChart",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            }
+        },
+        "stackedBarChart2": {
+            "baseComponent": "stackedBarChart",
+            "parameters": {
+                "data": [
+                    {
+                        "name": "A",
+                        "value": "10"
+                    },
+                    {
+                        "name": "B",
+                        "value": "20"
+                    },
+                    {
+                        "name": "C",
+                        "value": "40"
+                    },
+                    {
+                        "name": "D",
+                        "value": "50"
+                    },
+                    {
+                        "name": "E",
+                        "value": "100"
+                    }
+                ],
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            }
+        },
+        "barChart1": {
+            "baseComponent": "barChart",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            }
+        },
+        "pieChart1": {
+            "baseComponent": "pieChart",
+            "parameters": {
+                "selectedIndices": [
+                    1,
+                    4
+                ]
+            }
+        },
+        "bubbleChart2": {
+            "baseComponent": "bubbleChart",
+            "parameters": {
+                "selectedIndices": [
+                    0,
+                    3
+                ]
+            }
+        },
+        "stackedBarChart3": {
+            "baseComponent": "stackedBarChart",
+            "parameters": {
+                "selectedIndices": [
+                    0,
+                    3
+                ]
+            }
+        },
+        "stackedBarChart4": {
+            "baseComponent": "stackedBarChart",
+            "parameters": {
+                "selectedIndices": [
+                    0,
+                    3
+                ]
+            }
+        },
+        "barChart2": {
+            "baseComponent": "barChart",
+            "parameters": {
+                "selectedIndices": [
+                    0,
+                    3
+                ]
+            }
+        },
+        "pieChart2": {
+            "baseComponent": "pieChart",
+            "parameters": {
+                "selectedIndices": [
+                    0,
+                    3
+                ]
+            }
+        },
+        "post-study-survey1": {
+            "type": "questionnaire",
+            "response": [
+                {
+                    "id": "q1",
+                    "prompt": "Which chart type you think is the most difficult",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "dropdown",
+                    "placeholder": "Enter your preference",
+                    "options": [
+                        {
+                            "label": "Bar",
+                            "value": "Bar"
+                        },
+                        {
+                            "label": "Stacked Bar",
+                            "value": "Stacked Bar"
+                        },
+                        {
+                            "label": "Bubble",
+                            "value": "Bubble"
+                        },
+                        {
+                            "label": "Pie",
+                            "value": "Pike"
+                        }
+                    ]
+                },
+                {
+                    "id": "q2",
+                    "prompt": "Your age",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "numerical",
+                    "placeholder": "Enter your age here, range from 0 - 100",
+                    "max": 100,
+                    "min": 0
+                },
+                {
+                    "id": "q3",
+                    "prompt": "From scale 1-5 how much do you like this study",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "likert",
+                    "preset": 5,
+                    "rightLabel": "Like",
+                    "leftLabel": "Dislike"
+                },
+                {
+                    "id": "q5",
+                    "prompt": "Any other comments?",
+                    "required": true,
+                    "location": "aboveStimulus",
+                    "type": "longText",
+                    "placeholder": "Enter your comments here"
+                }
+            ]
+        }
+    },
+    "sequence": {
+        "order": "fixed",
+        "components": [
+            "introduction",
+            "consent",
+            "training1",
+            "trainingBubbleChart1",
+            "trainingStackedBarChart1",
+            "trainingBarChart1",
+            "trainingPieChart1",
+            "bubbleChart1",
+            "stackedBarChart1",
+            "stackedBarChart2",
+            "pieChart1",
+            "barChart1",
+            "bubbleChart2",
+            "stackedBarChart3",
+            "stackedBarChart4",
+            "pieChart2",
+            "barChart2",
+            "post-study-survey1"
+        ]
+    }
+}
