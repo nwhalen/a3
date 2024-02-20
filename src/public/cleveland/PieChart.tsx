@@ -14,8 +14,10 @@ const chartSettings = {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const angleGen = d3.pie<any>().value((d: any) => d.value);
-
 const radius = 150;
+
+//randomly selects one of the 10 datasets and puts it into an array
+const ran = Math.floor(Math.random() * 10)
 
 function PieChart({
   parameters: data,
@@ -23,9 +25,12 @@ function PieChart({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   parameters: any;
 }) {
-  const [ref, dms] = useChartDimensions(chartSettings);
 
-  const angles = angleGen(data.data);
+  
+  const dataArr = data.data[ran].datas
+  console.log(dataArr)
+  const [ref, dms] = useChartDimensions(chartSettings);
+  const angles = angleGen(dataArr);
   const arcsGen = angles.map((angle) => d3
     .arc()
     .innerRadius(0)

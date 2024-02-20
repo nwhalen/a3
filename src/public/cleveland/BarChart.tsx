@@ -13,15 +13,35 @@ const chartSettings = {
   height: 400,
 };
 
+//randomly selects one of the 10 datasets and puts it into an array
+const ran = Math.floor(Math.random() * 10)
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function BarChart({ parameters }: { parameters: any }) {
   const tickLength = 6;
   const [ref, dms] = useChartDimensions(chartSettings);
 
+  
+
+  //isolates the randomly selected dataset into its own array
+  const t = []
+  t.push(parameters.data[ran])
+
+
+  //uses the randomly selected dataset and grabs all five "name" to create the bar graphs
+  const dataArr = [];
+  for(let i =0;i<5;i++){
+    dataArr.push(String(t.map((d: { name: any; datas:any; }) => d.datas[i].name)));
+  }
+
+  //grabs "value" to create the bar graphs
+  const da = parameters.data.map((d: { name: any; datas:any; }) => d.datas);
+
   const xScale = d3
     .scaleBand()
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    .domain(parameters.data.map((d: { name: any }) => d.name))
+  //chosen dataset is the domain
+    .domain(dataArr)
     .range([0, dms.boundedWidth])
     .padding(0.2);
 
@@ -66,7 +86,8 @@ function BarChart({ parameters }: { parameters: any }) {
           </g>
           <g transform={`translate(${[0, 0].join(',')})`}>
             <Bars
-              data={parameters.data}
+            //data with the name and value fields from randomly chosen dataset
+              data={da[ran]}
               xScale={xScale}
               yScale={yScale}
               height={dms.boundedHeight}

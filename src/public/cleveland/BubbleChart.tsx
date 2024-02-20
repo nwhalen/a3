@@ -9,17 +9,35 @@ const chartSettings = {
   marginTop: 15,
   marginRight: 15,
   height: 400,
-  width: 400,
+  width: 500,
 };
+
+//randomly selects one of the 10 datasets and puts it into an array
+const ran = Math.floor(Math.random() * 10)
 
 const createBubbleData = (
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   { data }: { data: any[] },
+
   width = 100,
   height = 100,
 ) => {
-  const dataArr = data.map((d) => +d.value);
-  const jsonData = { children: dataArr.map((d) => ({ value: d })) };
+  //BEYOND THIS POINT IS A LOOP THE RUNS AFTER EACH CLICK OR TYPE
+
+  const dataArr = data.map((d) => d);
+
+  //isolates the randomly selected dataset into its own array
+  const t = [];
+    t.push(dataArr[ran])
+
+  //uses the randomly selected dataset and grabs all five "value" to create the bubble graphs
+  const dArr = [];
+  for(let i=0; i<5;i++){
+    dArr.push(t.map((d) => d.datas[i].value));
+  }
+  const jsonData = { children: dArr.map((d) => ({ value: d })) };
+
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const bubble: any = d3
     .pack()

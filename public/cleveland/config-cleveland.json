@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/reVISit-studies/study/main/src/parser/StudyConfigSchema.json",
     "studyMetadata": {
-        "title": "Dynamic React.js Stimuli: A Graphical Perception Experiment",
+        "title": "A3 Experiment",
         "version": "pilot",
         "authors": [
-            "The reVISit Team"
+            "Kendall Haddigan, Andrew Sosa,  Nicholas Whalen"
         ],
-        "date": "2023-04-28",
-        "description": "A demo using dynamic React components as stimuli to replicate a Cleveland & McGill graphical perception task (doi:10.1080/01621459.1984.10478080), with a consent form, brief training, a post study survey. Data is collected via form elements in validated fields.",
+        "date": "2024-02-19",
+        "description": "A3 Experiment",
         "organizations": [
             "University of Utah",
             "WPI",
@@ -31,29 +31,305 @@
             "parameters": {
                 "data": [
                     {
-                        "name": "A",
-                        "value": "30"
-                    },
-                    {
-                        "name": "B",
-                        "value": "40"
-                    },
-                    {
-                        "name": "C",
-                        "value": "50"
-                    },
-                    {
-                        "name": "D",
-                        "value": "40"
-                    },
-                    {
-                        "name": "E",
-                        "value": "60"
-                    }
-                ],
-                "selectedIndices": [
-                    1,
-                    4
+                        "name": "Dataset 1",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "93"
+                          },
+                          {
+                            "name": "B",
+                            "value": "38"
+                          },
+                          {
+                            "name": "C",
+                            "value": "19"
+                          },
+                          {
+                            "name": "D",
+                            "value": "19"
+                          },
+                          {
+                            "name": "E",
+                            "value": "22"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          5
+                        ],
+                        "correctAnswer": 0.6
+                      },
+                      {
+                        "name": "Dataset 2",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "33"
+                          },
+                          {
+                            "name": "B",
+                            "value": "26"
+                          },
+                          {
+                            "name": "C",
+                            "value": "32"
+                          },
+                          {
+                            "name": "D",
+                            "value": "1"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          5,
+                          5
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 3",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "1"
+                          },
+                          {
+                            "name": "B",
+                            "value": "17"
+                          },
+                          {
+                            "name": "C",
+                            "value": "18"
+                          },
+                          {
+                            "name": "D",
+                            "value": "24"
+                          },
+                          {
+                            "name": "E",
+                            "value": "64"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 4",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "63"
+                          },
+                          {
+                            "name": "B",
+                            "value": "94"
+                          },
+                          {
+                            "name": "C",
+                            "value": "73"
+                          },
+                          {
+                            "name": "D",
+                            "value": "9"
+                          },
+                          {
+                            "name": "E",
+                            "value": "40"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 5",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "0"
+                          },
+                          {
+                            "name": "B",
+                            "value": "55"
+                          },
+                          {
+                            "name": "C",
+                            "value": "20"
+                          },
+                          {
+                            "name": "D",
+                            "value": "65"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          4
+                        ],
+                        "correctAnswer": 0.75
+                      },
+                      {
+                        "name": "Dataset 6",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "82"
+                          },
+                          {
+                            "name": "B",
+                            "value": "11"
+                          },
+                          {
+                            "name": "C",
+                            "value": "89"
+                          },
+                          {
+                            "name": "D",
+                            "value": "6"
+                          },
+                          {
+                            "name": "E",
+                            "value": "70"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          3
+                        ],
+                        "correctAnswer": 0.67
+                      },
+                      {
+                        "name": "Dataset 7",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "13"
+                          },
+                          {
+                            "name": "B",
+                            "value": "7"
+                          },
+                          {
+                            "name": "C",
+                            "value": "67"
+                          },
+                          {
+                            "name": "D",
+                            "value": "97"
+                          },
+                          {
+                            "name": "E",
+                            "value": "30"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 8",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "100"
+                          },
+                          {
+                            "name": "B",
+                            "value": "86"
+                          },
+                          {
+                            "name": "C",
+                            "value": "9"
+                          },
+                          {
+                            "name": "D",
+                            "value": "44"
+                          },
+                          {
+                            "name": "E",
+                            "value": "95"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 9",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "60"
+                          },
+                          {
+                            "name": "B",
+                            "value": "3"
+                          },
+                          {
+                            "name": "C",
+                            "value": "10"
+                          },
+                          {
+                            "name": "D",
+                            "value": "66"
+                          },
+                          {
+                            "name": "E",
+                            "value": "42"
+                          }
+                        ],
+                        "selectedIndices": [
+                          4,
+                          4
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 10",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "15"
+                          },
+                          {
+                            "name": "B",
+                            "value": "97"
+                          },
+                          {
+                            "name": "C",
+                            "value": "7"
+                          },
+                          {
+                            "name": "D",
+                            "value": "89"
+                          },
+                          {
+                            "name": "E",
+                            "value": "4"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      }
                 ]
             },
             "response": [
@@ -135,30 +411,306 @@
             "parameters": {
                 "data": [
                     {
-                        "name": "A",
-                        "value": "30"
-                    },
-                    {
-                        "name": "B",
-                        "value": "40"
-                    },
-                    {
-                        "name": "C",
-                        "value": "50"
-                    },
-                    {
-                        "name": "D",
-                        "value": "40"
-                    },
-                    {
-                        "name": "E",
-                        "value": "60"
-                    }
-                ],
-                "selectedIndices": [
-                    1,
-                    4
-                ]
+                        "name": "Dataset 1",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": 10
+                          },
+                          {
+                            "name": "B",
+                            "value": 30
+                          },
+                          {
+                            "name": "C",
+                            "value": 50
+                          },
+                          {
+                            "name": "D",
+                            "value": 60
+                          },
+                          {
+                            "name": "E",
+                            "value": 80
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          5
+                        ],
+                        "correctAnswer": 0.6
+                      },
+                      {
+                        "name": "Dataset 2",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "33"
+                          },
+                          {
+                            "name": "B",
+                            "value": "26"
+                          },
+                          {
+                            "name": "C",
+                            "value": "32"
+                          },
+                          {
+                            "name": "D",
+                            "value": "1"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          5,
+                          5
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 3",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "1"
+                          },
+                          {
+                            "name": "B",
+                            "value": "17"
+                          },
+                          {
+                            "name": "C",
+                            "value": "18"
+                          },
+                          {
+                            "name": "D",
+                            "value": "24"
+                          },
+                          {
+                            "name": "E",
+                            "value": "64"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 4",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "63"
+                          },
+                          {
+                            "name": "B",
+                            "value": "94"
+                          },
+                          {
+                            "name": "C",
+                            "value": "73"
+                          },
+                          {
+                            "name": "D",
+                            "value": "9"
+                          },
+                          {
+                            "name": "E",
+                            "value": "40"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 5",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "0"
+                          },
+                          {
+                            "name": "B",
+                            "value": "55"
+                          },
+                          {
+                            "name": "C",
+                            "value": "20"
+                          },
+                          {
+                            "name": "D",
+                            "value": "65"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          4
+                        ],
+                        "correctAnswer": 0.75
+                      },
+                      {
+                        "name": "Dataset 6",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "82"
+                          },
+                          {
+                            "name": "B",
+                            "value": "11"
+                          },
+                          {
+                            "name": "C",
+                            "value": "89"
+                          },
+                          {
+                            "name": "D",
+                            "value": "6"
+                          },
+                          {
+                            "name": "E",
+                            "value": "70"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          3
+                        ],
+                        "correctAnswer": 0.67
+                      },
+                      {
+                        "name": "Dataset 7",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "13"
+                          },
+                          {
+                            "name": "B",
+                            "value": "7"
+                          },
+                          {
+                            "name": "C",
+                            "value": "67"
+                          },
+                          {
+                            "name": "D",
+                            "value": "97"
+                          },
+                          {
+                            "name": "E",
+                            "value": "30"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 8",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "100"
+                          },
+                          {
+                            "name": "B",
+                            "value": "86"
+                          },
+                          {
+                            "name": "C",
+                            "value": "9"
+                          },
+                          {
+                            "name": "D",
+                            "value": "44"
+                          },
+                          {
+                            "name": "E",
+                            "value": "95"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 9",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "60"
+                          },
+                          {
+                            "name": "B",
+                            "value": "3"
+                          },
+                          {
+                            "name": "C",
+                            "value": "10"
+                          },
+                          {
+                            "name": "D",
+                            "value": "66"
+                          },
+                          {
+                            "name": "E",
+                            "value": "42"
+                          }
+                        ],
+                        "selectedIndices": [
+                          4,
+                          4
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 10",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "15"
+                          },
+                          {
+                            "name": "B",
+                            "value": "97"
+                          },
+                          {
+                            "name": "C",
+                            "value": "7"
+                          },
+                          {
+                            "name": "D",
+                            "value": "89"
+                          },
+                          {
+                            "name": "E",
+                            "value": "4"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      }
+                    ]
             },
             "response": [
                 {
@@ -187,30 +739,306 @@
             "parameters": {
                 "data": [
                     {
-                        "name": "A",
-                        "value": "30"
-                    },
-                    {
-                        "name": "B",
-                        "value": "40"
-                    },
-                    {
-                        "name": "C",
-                        "value": "50"
-                    },
-                    {
-                        "name": "D",
-                        "value": "40"
-                    },
-                    {
-                        "name": "E",
-                        "value": "60"
-                    }
-                ],
-                "selectedIndices": [
-                    1,
-                    4
-                ]
+                        "name": "Dataset 1",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": 10
+                          },
+                          {
+                            "name": "B",
+                            "value": 30
+                          },
+                          {
+                            "name": "C",
+                            "value": 50
+                          },
+                          {
+                            "name": "D",
+                            "value": 60
+                          },
+                          {
+                            "name": "E",
+                            "value": 80
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          5
+                        ],
+                        "correctAnswer": 0.6
+                      },
+                      {
+                        "name": "Dataset 2",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "33"
+                          },
+                          {
+                            "name": "B",
+                            "value": "26"
+                          },
+                          {
+                            "name": "C",
+                            "value": "32"
+                          },
+                          {
+                            "name": "D",
+                            "value": "1"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          5,
+                          5
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 3",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "1"
+                          },
+                          {
+                            "name": "B",
+                            "value": "17"
+                          },
+                          {
+                            "name": "C",
+                            "value": "18"
+                          },
+                          {
+                            "name": "D",
+                            "value": "24"
+                          },
+                          {
+                            "name": "E",
+                            "value": "64"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 4",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "63"
+                          },
+                          {
+                            "name": "B",
+                            "value": "94"
+                          },
+                          {
+                            "name": "C",
+                            "value": "73"
+                          },
+                          {
+                            "name": "D",
+                            "value": "9"
+                          },
+                          {
+                            "name": "E",
+                            "value": "40"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 5",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "0"
+                          },
+                          {
+                            "name": "B",
+                            "value": "55"
+                          },
+                          {
+                            "name": "C",
+                            "value": "20"
+                          },
+                          {
+                            "name": "D",
+                            "value": "65"
+                          },
+                          {
+                            "name": "E",
+                            "value": "67"
+                          }
+                        ],
+                        "selectedIndices": [
+                          3,
+                          4
+                        ],
+                        "correctAnswer": 0.75
+                      },
+                      {
+                        "name": "Dataset 6",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "82"
+                          },
+                          {
+                            "name": "B",
+                            "value": "11"
+                          },
+                          {
+                            "name": "C",
+                            "value": "89"
+                          },
+                          {
+                            "name": "D",
+                            "value": "6"
+                          },
+                          {
+                            "name": "E",
+                            "value": "70"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          3
+                        ],
+                        "correctAnswer": 0.67
+                      },
+                      {
+                        "name": "Dataset 7",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "13"
+                          },
+                          {
+                            "name": "B",
+                            "value": "7"
+                          },
+                          {
+                            "name": "C",
+                            "value": "67"
+                          },
+                          {
+                            "name": "D",
+                            "value": "97"
+                          },
+                          {
+                            "name": "E",
+                            "value": "30"
+                          }
+                        ],
+                        "selectedIndices": [
+                          2,
+                          4
+                        ],
+                        "correctAnswer": 0.5
+                      },
+                      {
+                        "name": "Dataset 8",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "100"
+                          },
+                          {
+                            "name": "B",
+                            "value": "86"
+                          },
+                          {
+                            "name": "C",
+                            "value": "9"
+                          },
+                          {
+                            "name": "D",
+                            "value": "44"
+                          },
+                          {
+                            "name": "E",
+                            "value": "95"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 9",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "60"
+                          },
+                          {
+                            "name": "B",
+                            "value": "3"
+                          },
+                          {
+                            "name": "C",
+                            "value": "10"
+                          },
+                          {
+                            "name": "D",
+                            "value": "66"
+                          },
+                          {
+                            "name": "E",
+                            "value": "42"
+                          }
+                        ],
+                        "selectedIndices": [
+                          4,
+                          4
+                        ],
+                        "correctAnswer": 1
+                      },
+                      {
+                        "name": "Dataset 10",
+                        "datas": [
+                          {
+                            "name": "A",
+                            "value": "15"
+                          },
+                          {
+                            "name": "B",
+                            "value": "97"
+                          },
+                          {
+                            "name": "C",
+                            "value": "7"
+                          },
+                          {
+                            "name": "D",
+                            "value": "89"
+                          },
+                          {
+                            "name": "E",
+                            "value": "4"
+                          }
+                        ],
+                        "selectedIndices": [
+                          1,
+                          1
+                        ],
+                        "correctAnswer": 1
+                      }
+                    ]
             },
             "response": [
                 {
